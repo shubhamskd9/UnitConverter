@@ -26,6 +26,17 @@ public static class UnitRegistry
         new UnitDefinition { Name = "kelvin",     Symbol = "K",   Category = "temperature", ToBaseFactor = 1.0,   Offset = 0 },
         new UnitDefinition { Name = "celsius",    Symbol = "°C",  Category = "temperature", ToBaseFactor = 1.0,   Offset = 273.15 },
         new UnitDefinition { Name = "fahrenheit", Symbol = "°F",  Category = "temperature", ToBaseFactor = 5.0/9.0, Offset = 255.3722222 },
+
+
+        // ── Volume (base unit: liter) ──────────────────────────
+        new UnitDefinition { Name = "liter",       Symbol = "L",   Category = "volume", ToBaseFactor = 1.0 },
+        new UnitDefinition { Name = "milliliter",  Symbol = "mL",  Category = "volume", ToBaseFactor = 0.001 },
+        new UnitDefinition { Name = "centiliter",  Symbol = "cL",  Category = "volume", ToBaseFactor = 0.01 },
+        new UnitDefinition { Name = "gallon",      Symbol = "gal", Category = "volume", ToBaseFactor = 3.78541 },
+        new UnitDefinition { Name = "quart",       Symbol = "qt",  Category = "volume", ToBaseFactor = 0.946353 },
+        new UnitDefinition { Name = "pint",        Symbol = "pt",  Category = "volume", ToBaseFactor = 0.473176 },
+        new UnitDefinition { Name = "cup",         Symbol = "cup", Category = "volume", ToBaseFactor = 0.236588 },
+        new UnitDefinition { Name = "fluid ounce", Symbol = "fl oz", Category = "volume", ToBaseFactor = 0.0295735 },
     };
     public static UnitDefinition? FindUnit(String nameOrSymbol)
     {

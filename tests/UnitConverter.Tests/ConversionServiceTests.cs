@@ -66,6 +66,32 @@ public class ConversionServiceTests
         Assert.Equal(2.204624, result.ConvertedValue, precision: 4);
     }
 
+    // ── Volume Tests ───────────────────────────────────────────
+
+    [Fact]
+    public void Convert_GallonToLiter_ReturnsCorrectValue()
+    {
+        var request = new ConversionRequest { FromUnit = "gallon", ToUnit = "liter", Value = 1 };
+        var result = _service.Convert(request);
+        Assert.Equal(3.78541, result.ConvertedValue, precision: 4);
+    }
+
+    [Fact]
+    public void Convert_LiterToMilliliter_ReturnsCorrectValue()
+    {
+        var request = new ConversionRequest { FromUnit = "liter", ToUnit = "milliliter", Value = 1 };
+        var result = _service.Convert(request);
+        Assert.Equal(1000, result.ConvertedValue, precision: 2);
+    }
+
+    [Fact]
+    public void Convert_CupToFluidOunce_ReturnsCorrectValue()
+    {
+        var request = new ConversionRequest { FromUnit = "cup", ToUnit = "fluid ounce", Value = 1 };
+        var result = _service.Convert(request);
+        Assert.Equal(8, result.ConvertedValue, precision: 2);
+    }
+
     // ── Validation Tests ───────────────────────────────────────
 
     [Fact]
