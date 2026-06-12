@@ -9,6 +9,7 @@ A RESTful API built with ASP.NET Core 9 that converts numerical values between d
 | Temperature | Celsius, Fahrenheit, Kelvin                            |
 | Length      | Meter, Kilometer, Centimeter, Millimeter, Mile, Yard, Foot, Inch |
 | Weight      | Kilogram, Gram, Milligram, Pound, Ounce, Tonne         |
+| Volume      | Liter, Milliliter, Centiliter, Gallon, Quart, Pint, Cup, Fluid Ounce |
 
 ## Prerequisites
 
